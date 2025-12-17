@@ -1,6 +1,8 @@
+require_relative "lib/lfs_test/version"
+
 Gem::Specification.new do |spec|
   spec.name          = "lfs-test"
-  spec.version       = "0.1.0"
+  spec.version       = LfsTest::VERSION
   spec.authors       = ["LFS Test"]
   spec.email         = ["test@example.com"]
 

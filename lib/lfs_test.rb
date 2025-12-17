@@ -12,6 +12,10 @@ module LfsTest
       raise Error, "Binary not found at #{binary_path}"
     end
 
+    unless File.executable?(binary_path)
+      raise Error, "Binary at #{binary_path} is not executable"
+    end
+
     system(binary_path)
   end
 end
